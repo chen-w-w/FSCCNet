@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 import torch.nn.functional as F
-class MultiConv_BiFPN(nn.Module):
+class MSA(nn.Module):
     def conv_block(self, in_channel, out_channel, kernel_size, stride=1, padding=0):
         return nn.Sequential(
             nn.BatchNorm2d(in_channel),
@@ -11,7 +11,7 @@ class MultiConv_BiFPN(nn.Module):
         )
 
     def __init__(self, in_channels, out_channels, L=1):
-        super(MultiConv_BiFPN, self).__init__()
+        super(MSA, self).__init__()
 
         assert in_channels % 12 == 0, "channels must be divisible by 12"
 

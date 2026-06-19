@@ -9,9 +9,9 @@ import numpy as np
 from model.ConvNet import ConvBNRelu
 from model.ExpandNet import ExpandNet
 from model.SENet import SENet
-from model.FrequencyConv import FrequencyConv
+from model.GIR import GIR
 from model.FSCC_Conv import FSCC_Conv
-from model.MultiConv_BiFPN import MultiConv_BiFPN
+from model.MSA import MSA
 from model.Attention import *
 
 class MP(nn.Module):

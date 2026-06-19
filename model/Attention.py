@@ -9,7 +9,7 @@ import numpy as np
 from model.ConvNet import ConvBNRelu
 from model.ExpandNet import ExpandNet
 from model.SENet import SENet
-from model.FrequencyConv import FrequencyConv
+from model.GIR import GIR
 from model.FSCC_Conv import FSCC_Conv
 class Mlp(nn.Module):
     def __init__(self, in_features, hidden_features=None, out_features=None, act_layer=nn.GELU, drop=0.):
